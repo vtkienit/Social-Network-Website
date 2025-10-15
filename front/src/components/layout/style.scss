@@ -1,0 +1,105 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+
+.navigation-buttons {
+    display: table;
+    width: 100%;
+    tr {
+        th {
+            padding: 0 10px;
+        }
+    }
+    border: 1px solid #ccc; /* Tùy chỉnh border cho container */
+	border-radius: 5px; /* Tùy chỉnh bo góc cho container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    background-color: white;
+}
+
+.btn {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    color:black;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 3px;
+}
+
+.btn:hover {
+    background-color: #8D949E;
+}
+
+.btn-home-layout {
+    background-color: #DADDE1;
+}
+
+.btn-account-layout {
+    background-color: #DADDE1;
+}
+
+.btn-personal-layout {
+    background-color: #DADDE1;
+}
+
+.btn-signout {
+    background-color: #DADDE1;
+}
+
+.btn-signin {
+    background-color: #DADDE1;
+}
+
+.m1{
+    width: 30.4%;
+    text-align: right;
+}
+
+.m2{
+    width: 38%;
+}
+
+.j2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .j1{
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .avatar-header{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%; 
+        }
+
+        p{
+            font-style: italic;
+            text-align: center;
+            margin: 0;
+            font-size: 19px;
+            font-style: bold;
+            color:gray;
+            margin-right: 10px;
+        }
+        .btn-signout, .btn-signin{
+            background-color: #BEC3C9;
+            color: white;
+            border: none;
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 10px;
+            
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken($secondary-color, 10%);
+            }
+        }
+    }
+}
